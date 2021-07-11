@@ -1,0 +1,28 @@
+<ng-container *ngIf="allCountdowns.length>0 else showNoContent">
+    <div cdkDropList class="event-list" (cdkDropListDropped)="sorted($event)">
+        <div class="event" *ngFor="let countdown of allCountdowns; index as i;" cdkDrag cdkDragLockAxis="y">
+            <div>
+                <h2>{{i+1}}. {{countdown.name}}</h2>
+                <p>{{countdown.date | date:'fullDate'}}</p>
+            </div>
+            <div class="event-options">
+                <button mat-mini-fab color="primary" aria-label="Delete event" matTooltip="Delete event"
+                    (click)="actionEvents(enums.actions.Delete, i, countdown)">
+                    <mat-icon>delete_outline</mat-icon>
+                </button>
+                <button mat-mini-fab color="primary" aria-label="Edit event" matTooltip="Edit event"
+                    (click)="actionEvents(enums.actions.Edit, i, countdown)">
+                    <mat-icon>settings</mat-icon>
+                </button>
+                <button mat-mini-fab color="primary" aria-label="Select Event" matTooltip="Select Event"
+                    (click)="actionEvents(enums.actions.Select, i, countdown)">
+                    <mat-icon>task_alt</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<ng-template #showNoContent>
+    <h2>No upcoming event found! Please add a new one to proceed. Thank you.</h2>
+</ng-template>

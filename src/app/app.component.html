@@ -1,0 +1,32 @@
+<header>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>FINAL COUNTDOWN</span>
+      <span class="example-spacer"></span>
+      <button mat-raised-button color="accent" class="add-event" (click)="openDialog('','', -1)">
+        <mat-icon>add_circle</mat-icon>
+        NEW EVENT
+      </button>
+      <span class="spacer"></span>
+      <mat-slide-toggle [checked]="darkThemeChecked" (change)="onThemeChange()">
+        Dark Mode
+      </mat-slide-toggle>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</header>
+
+<main>
+  <mat-drawer-container class="container">
+    <mat-drawer mode="side" opened>
+      <app-list-events [countdowns]="cdStr" (returnEvent)="eventActions($event)"
+        (sortedEvents)="storeSortedEvents($event)"></app-list-events>
+    </mat-drawer>
+    <mat-drawer-content>
+      <app-show-event [selectedEvent]="selectedEvent"></app-show-event>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</main>
+
+<footer>
+
+</footer>

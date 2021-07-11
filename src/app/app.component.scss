@@ -1,0 +1,36 @@
+header {
+
+    position: fixed;
+    width   : 100%;
+    z-index : 3;
+
+    .spacer {
+        flex: 1 1 auto;
+    }
+
+    .add-event {
+        margin-left: 20px;
+    }
+
+}
+
+main {
+
+    padding-top: 64px;
+
+    mat-drawer {
+        width           : 30vw;
+        padding         : 10px;
+        background-color: var(--black2);
+        border          : none;
+    }
+
+    mat-drawer-content {
+        background-color: var(--black2);
+    }
+
+    .container {
+        height: calc(100vh - 64px);
+    }
+
+}

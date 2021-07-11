@@ -1,0 +1,6 @@
+<div class="countdown-zone" *ngIf="!!selectedEvent">
+    <div class="heading">{{event.name}}</div>
+    <div class="sub-heading">{{event.date | date:'fullDate'}}</div>
+    <div class="heading">{{days}}</div>
+    <div class="sub-heading">days remaining</div>
+</div>

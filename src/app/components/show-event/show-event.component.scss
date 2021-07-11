@@ -1,0 +1,16 @@
+.countdown-zone {
+
+    height     : 100%;
+    display    : grid;
+    place-items: center;
+
+    .heading {
+        font-size  : 10vmin;
+        line-height: normal;
+    }
+
+    .sub-heading {
+        font-size: 5vmin;
+    }
+
+}
