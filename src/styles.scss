@@ -47,6 +47,16 @@ body {
   @include mat.all-component-colors($light-theme);
   background-color: var(--white1);
 
+  footer {
+
+    color: var(--black2) !important;
+
+    a {
+      color: var(--black2) !important;
+    }
+
+  }
+
   mat-drawer {
     background-color: var(--white1) !important;
   }

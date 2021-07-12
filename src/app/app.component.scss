@@ -30,7 +30,21 @@ main {
     }
 
     .container {
-        height: calc(100vh - 64px);
+        height: calc(100vh - 64px - 28px);
+    }
+
+}
+
+footer {
+
+    color     : var(--white2);
+    font-size : 16px;
+    padding   : 4px;
+    text-align: center;
+
+    a {
+        color      : var(--white2);
+        font-weight: bold;
     }
 
 }

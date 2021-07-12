@@ -1,5 +1,21 @@
 # The Final Countdown
 
+## A small app to keep track of the upcoming events that you're excited about!
+
+[**DEMO**: https://the-final-countdown.glitch.me](https://the-final-countdown.glitch.me)
+
+Okay, how many times you had to count the number of days remaining for any special day that you're excited about, and then some days later you completely forgot about it? 😜
+
+Tell you what, I'm a Bengali and I always get super excited for Durga Puja! It usually starts with some random Facebook posts like "100 days remaining..." and I start syncing only to forget the tracks eventually after few days. 😜
+
+Here comes "The Final Countdown" in the picture where you can set a countdown and check it whenever you like!
+
+The idea is based on one of my very close friends, [Moithil's](https://github.com/moithil) Durga Puja countdown timer with a brand new UI and loads of other features.
+
+Suggestions are highly appreciated!
+
+## Angular details
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
 ## Development server
