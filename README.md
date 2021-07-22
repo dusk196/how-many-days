@@ -1,4 +1,4 @@
-# How Many Days
+# How Many Days (AKA The Final Countdown)
 
 ## A small app to keep track of the upcoming events that you're excited about!
 
@@ -6,7 +6,7 @@
 
 Okay, how many times you had to count the number of days remaining for any special day that you're excited about, and then some days later you completely forgot about it? 😜
 
-Tell you what, I'm a Bengali and I always get super excited for Durga Puja! It usually starts with some random Facebook posts like "100 days remaining..." and I start syncing only to forget the tracks eventually after few days. 😜
+Tell you what, I'm a Bengali and I always get super excited for Durga Puja! It usually starts with some random Facebook posts like "100 days remaining..." and I start syncing up  the number of days only to forget the track of days eventually after few days. 😜
 
 Here comes "How Many Days" in the picture where you can set a countdown and check it whenever you like!
 
