@@ -40,6 +40,37 @@ body {
   background-color: var(--black2);
 }
 
+button {
+  cursor: pointer;
+}
+
+section {
+  margin: 20px;
+}
+
+mat-tab-body {
+  margin-top: 20px;
+}
+
+mat-list {
+
+  margin-top   : 10px;
+  margin-bottom: 10px;
+  margin-right : 2px;
+
+  mat-list-item {
+    border            : 1px solid var(--black3);
+    transition        : all .4s ease;
+    -webkit-transition: all .4s ease;
+  }
+
+  mat-list-item:hover {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    cursor: pointer;
+  }
+
+}
+
 // Apply the light theme only when the `.light-theme` CSS class is applied
 // to an ancestor element of the components (such as `body`).
 .light-theme {
@@ -63,6 +94,21 @@ body {
 
   mat-drawer-content {
     background-color: var(--white1) !important;
+  }
+
+  mat-list {
+
+    mat-list-item {
+      border            : 1px solid var(--white1);
+      transition        : all .4s ease;
+      -webkit-transition: all .4s ease;
+    }
+
+    mat-list-item:hover {
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      cursor: pointer;
+    }
+
   }
 
   .event {

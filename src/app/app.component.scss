@@ -4,12 +4,23 @@ header {
     width   : 100%;
     z-index : 3;
 
+    .heading {
+        font-size: xx-large;
+    }
+
     .spacer {
         flex: 1 1 auto;
     }
 
-    .add-event {
+    .nav-btn {
         margin-left: 20px;
+    }
+
+    .nav-cal {
+        display       : flex;
+        align-items   : flex-end;
+        flex-direction: column;
+        margin-right  : 20px;
     }
 
 }
@@ -43,8 +54,7 @@ footer {
     text-align: center;
 
     a {
-        color      : var(--white2);
-        font-weight: bold;
+        color: var(--white2);
     }
 
 }

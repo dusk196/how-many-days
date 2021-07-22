@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon'
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -13,6 +12,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule, MAT_DATE_FORMATS } from '@angular/material/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatListModule } from '@angular/material/list';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 // Moment
 import { MomentDateModule } from '@angular/material-moment-adapter';
@@ -33,7 +35,6 @@ import { CUSTOM_DATE_FORMATS } from 'src/app/utils/date-formats';
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
-    MatSlideToggleModule,
     MatDialogModule,
     MatSidenavModule,
     MatFormFieldModule,
@@ -41,12 +42,17 @@ import { CUSTOM_DATE_FORMATS } from 'src/app/utils/date-formats';
     MatDatepickerModule,
     MatNativeDateModule,
     MatTooltipModule,
+    MatTabsModule,
+    MatListModule,
+    MatProgressSpinnerModule,
     // Moment
     MomentDateModule,
     // CDK
     DragDropModule
   ],
-  providers: [{ provide: MAT_DATE_FORMATS, useValue: CUSTOM_DATE_FORMATS }]
+  providers: [
+    { provide: MAT_DATE_FORMATS, useValue: CUSTOM_DATE_FORMATS }
+  ]
 })
 
 export class MaterialModule { }

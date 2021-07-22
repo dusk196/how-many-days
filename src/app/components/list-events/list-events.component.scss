@@ -1,10 +1,11 @@
+.search {
+    width: 97%;
+}
+
 .event-list {
-    max-width    : 97%;
-    border       : solid 1px #ccc;
-    min-height   : 60px;
-    display      : block;
-    background   : var(--black3);
-    overflow     : hidden;
+    max-width : 97%;
+    display   : block;
+    overflow  : hidden;
 }
 
 .event {

@@ -112,6 +112,14 @@
               "src/**/*.html"
             ]
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/final-countdown",
+            "netlifyToken": "",
+            "siteId": "37fa63a1-c0e6-4756-84c0-a1431b138084"
+          }
         }
       }
     }

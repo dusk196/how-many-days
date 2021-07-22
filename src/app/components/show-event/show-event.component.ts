@@ -12,16 +12,15 @@ export class ShowEventComponent implements OnChanges {
 
   @Input() selectedEvent: string = '';
 
-  constructor() { }
-
   days: number = 0;
   event: CountdownData = { name: '', date: '', selected: false };
+  msg: String = '';
 
   ngOnChanges(): void {
-    console.log(this.selectedEvent);
     if (!!this.selectedEvent) {
       this.event = JSON.parse(this.selectedEvent);
       this.days = this.dateDiff(new Date(), new Date(this.event.date), 'days');
+      this.msg = this.days >= 0 ? (this.days === 1 ? 'day remaining' : 'days remaining') : (this.days === -1 ? 'day has passed' : 'days have passed');
     }
   }
 

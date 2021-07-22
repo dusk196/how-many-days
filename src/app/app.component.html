@@ -1,16 +1,28 @@
 <header>
   <mat-toolbar color="primary">
     <mat-toolbar-row>
-      <span>THE FINAL COUNTDOWN</span>
-      <span class="example-spacer"></span>
-      <button mat-raised-button color="accent" class="add-event" (click)="openDialog('','', -1)">
+      <h1 class="heading">HOW MANY DAYS?!</h1>
+      <button mat-raised-button color="accent" class="nav-btn" (click)="openDialog('','', -1)">
         <mat-icon>add_circle</mat-icon>
         NEW EVENT
       </button>
+      <button *ngIf="countdowns.length > 0" mat-raised-button color="accent" class="nav-btn" (click)="deleteAll()">
+        <mat-icon>delete</mat-icon>
+        DELETE ALL
+      </button>
+      <button *ngIf="countdowns.length === 0" mat-raised-button color="accent" class="nav-btn" (click)="addDemo()">
+        <mat-icon>class</mat-icon>
+        DEMO
+      </button>
       <span class="spacer"></span>
-      <mat-slide-toggle [checked]="darkThemeChecked" (change)="onThemeChange()">
-        Dark Mode
-      </mat-slide-toggle>
+      <div class="nav-cal">
+        <span>{{currDateTime | date:'mediumTime'}} (IST)</span>
+        <span>{{currDateTime | date:'fullDate'}}</span>
+      </div>
+      <button mat-mini-fab color="accent" aria-label="Toggle Theme"
+        [matTooltip]="configs.darkTheme?'Toggle to light mode':'Toggle to dark mode'" (click)="onThemeChange()">
+        <mat-icon>{{configs.darkTheme?'light_mode':'nightlight'}}</mat-icon>
+      </button>
     </mat-toolbar-row>
   </mat-toolbar>
 </header>
