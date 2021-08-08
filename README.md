@@ -1,6 +1,12 @@
-# How Many Days (AKA The Final Countdown)
+# How Many Days
 
-## A small app to keep track of the upcoming events that you're excited about!
+[![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
+[![Angular Material](https://img.shields.io/badge/Angular_Material-3f51b5?style=for-the-badge&logo=angular&logoColor=white)](https://material.angular.io/)
+
+![Language](https://img.shields.io/github/languages/top/dusk196/how-many-days?style=for-the-badge)
+![Size](https://img.shields.io/github/languages/code-size/dusk196/how-many-days?style=for-the-badge)
+
+### A small app to keep track of the upcoming events that you're excited about!
 
 [**DEMO**: https://how-many-days.netlify.app/](https://how-many-days.netlify.app/)
 
