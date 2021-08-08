@@ -38,6 +38,7 @@ export class AddEventComponent implements OnInit {
         if (temp.year === this.currentYear) {
           this.eventList = temp.eventList;
           this.isHolidaysLoaded = true;
+          this.filterEvents();
         } else
           this.callCalendarApi();
       } catch (err: unknown) {
@@ -56,6 +57,7 @@ export class AddEventComponent implements OnInit {
           { year: this.currentYear, events: presentEvents },
           { year: this.currentYear + 1, events: futureEvents }
         );
+        this.filterEvents();
         localStorage.setItem(this.enums.localStorage.Holidays, JSON.stringify({ year: this.currentYear, eventList: this.eventList }));
       },
       (err: Error) => {

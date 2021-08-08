@@ -10,7 +10,7 @@
         <ng-container *ngIf="msg.length === 0 else showError">
 
           <mat-form-field appearance="fill" color="accent">
-            <mat-label>Event name</mat-label>
+            <mat-label>Start typing to filter events</mat-label>
             <input matInput [(ngModel)]="data.name" name="event name for search" required (keyup)="filterEvents()">
           </mat-form-field>
 
