@@ -3,6 +3,8 @@
 [![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
 [![Angular Material](https://img.shields.io/badge/Angular_Material-3f51b5?style=for-the-badge&logo=angular&logoColor=white)](https://material.angular.io/)
 
+[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge)](http://perso.crans.org/besson/LICENSE.html)
+[![Open Source? Yes!](https://img.shields.io/badge/Open_Source%3F-Yes!-blue?style=for-the-badge&logo=gitHub&logoColor=white)](https://opensource.com/resources/what-open-source/)
 ![Language](https://img.shields.io/github/languages/top/dusk196/how-many-days?style=for-the-badge)
 ![Size](https://img.shields.io/github/languages/code-size/dusk196/how-many-days?style=for-the-badge)
 
